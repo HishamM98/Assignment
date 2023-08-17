@@ -96,6 +96,41 @@ li.dropdown {
     display: block;
 }
 
+.navbar-menu {
+    display: none;
+    text-align: center;
+}
+
+.slide-down {
+    animation: slideDown .5s ease-in-out;
+}
+
+@keyframes slideDown {
+    from {
+        display: none;
+        transform: translateY(-500px);
+    }
+
+    to {
+        display: block;
+        transform: translateY(0px);
+    }
+}
+
+.navbar-menu ul li {
+    float: none;
+    width: 100%;
+    border-bottom: 1px solid var(--green);
+}
+
+.navbar-menu ul li a {
+    width: 100%;
+}
+
+.navbar-menu .dropdown-content {
+    width: 100%;
+}
+
 .search {
     padding: 14px 16px;
     position: absolute;
@@ -224,6 +259,13 @@ li.dropdown {
     padding: 20px;
     border-radius: 50%;
     color: white;
+    cursor: pointer;
+}
+
+#add-button:hover {
+    background-color: white;
+    color: var(--green);
+    box-shadow: 0px 0px 3px 3px grey inset;
 }
 
 .company-details {
@@ -282,6 +324,7 @@ button[type="submit"] {
     border: none;
     color: white;
     padding: 10px 15px;
+    cursor: pointer;
 }
 
 /* footer */
@@ -308,13 +351,17 @@ footer {
     width: 3rem;
 }
 
+#page-up:hover {
+    background-color: var(--green);
+}
+
 #page-up a {
     text-decoration: none;
     color: white;
 }
 
 #page-up i {
-    font-size: 18px;
+    font-size: 22px;
 }
 
 footer p {
@@ -331,6 +378,10 @@ footer p {
     color: white;
     font-size: 18px;
     margin: auto;
+}
+
+.social-container>span {
+    cursor: pointer;
 }
 
 @media (max-width: 800px) {
