@@ -16,7 +16,6 @@
 
 /* navbar */
 .nav-bar {
-    height: 5vh;
     background-color: black;
     color: white;
 }
@@ -157,8 +156,6 @@ li.dropdown {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    /* align-items: center; */
-
 }
 
 .member img {
@@ -349,7 +346,7 @@ footer p {
         display: block;
     }
 
-    .team-container {
+    .menu .team-container {
         flex-direction: column;
     }
 
